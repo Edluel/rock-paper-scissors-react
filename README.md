@@ -1,1 +1,1 @@
-# rock-paper-scissors-react
+# rock paper scissors
