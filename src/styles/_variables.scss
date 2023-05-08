@@ -1,0 +1,32 @@
+//Mobile: 375px
+//Desktop: 1366px
+
+// Colors
+
+// Primary
+$scissor1: hsl(39, 89%, 49%);
+$scissors2: hsl(40, 84%, 53%);
+$paper1: hsl(230, 89%, 62%);
+$paper2: hsl(230, 89%, 65%);
+$rock1: hsl(349, 71%, 52%);
+$rock2: hsl(349, 70%, 56%);
+$lizard1: hsl(261, 73%, 60%);
+$lizard2: hsl(261, 72%, 63%);
+$spock1:hsl(189, 59%, 53%);
+$spock2: hsl(189, 58%, 57%);
+
+
+// Neutral
+
+$darkText: hsl(229, 25%, 31%);
+$scoreText: hsl(229, 64%, 46%);
+$headerOutline: hsl(217, 16%, 45%);
+
+// Background
+$radialGradient1: hsl(214, 47%, 23%);
+$radialGradient2: hsl(237, 49%, 15%);
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+$font-family: 'Barlou Semi Condensed', sans-serif;
+$font-size: 16px;
