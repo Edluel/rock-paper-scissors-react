@@ -8,4 +8,28 @@
     border: 4px solid $headerOutline;
     padding: 20px;
     border-radius: $radius;
+
+    &-score {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: $radius;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h4 { 
+            color: $scoreText; 
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        p { 
+            color: $darkText; 
+            font-weight: 700; 
+            font-size: 40px;
+            margin: 0px;
+        }
+
+    }
 }

@@ -2,17 +2,18 @@ import React from 'react'
 import logo from '../../assets/images/logo-bonus.svg'
 import './header.css'
 
-export default function Header() {
+export default function Header(props) {
+  const {score, setScore} = props;
+
+
   return (
     <div className="header">
         <div className="header-logo">
             <img src={logo} alt="" />
         </div>
         <div className="header-score">
-            <p>
-                12
-            </p>
-    
+            <h4>S C O R E</h4>
+            <p>{score}</p>
         </div>
     </div>
   )
