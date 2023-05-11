@@ -3,7 +3,7 @@ import logo from '../../assets/images/logo-bonus.svg'
 import './header.css'
 
 export default function Header(props) {
-  const {score, setScore} = props;
+  const {score} = props;
 
 
   return (
