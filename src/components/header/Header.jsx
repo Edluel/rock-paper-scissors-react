@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/images/logo-bonus.svg'
+import logo from '../../assets/images/logo.svg'
 import './header.css'
 
 export default function Header(props) {
