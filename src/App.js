@@ -4,11 +4,12 @@ import Game from './components/game/Game';
 
 function App() {
   const [score, setScore] = useState(0);
+  const [choice, setChoice] = useState('');
 
   return (
     <div className="App">
       <Header score={score} />
-      <Game setScore={setScore} />
+      <Game setChoice={setChoice} />
     </div>
   );
 }

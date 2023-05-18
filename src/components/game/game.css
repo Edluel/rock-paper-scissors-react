@@ -1,3 +1,100 @@
-.game h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+.game {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.game-options {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/images/bg-triangle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 350px;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.game-options-svg {
+  width: 50px;
+  height: 60px;
+}
+.game-options-top {
+  display: flex;
+  justify-content: space-between;
+}
+.game-options-bot {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.game-options-paper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0px 5px 10px gray;
+  cursor: pointer;
+}
+.game-options-paper::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, hsl(230, 89%, 65%) 80%, hsl(230, 89%, 45%) 100%);
+  z-index: -1;
+}
+.game-options-scissors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0px 5px 10px gray;
+  cursor: pointer;
+}
+.game-options-scissors::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, hsl(40, 84%, 53%) 80%, hsl(39, 89%, 33%) 100%);
+  z-index: -1;
+}
+.game-options-rock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0px 5px 10px gray;
+  cursor: pointer;
+}
+.game-options-rock::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, hsl(349, 70%, 56%) 80%, hsl(349, 71%, 36%) 100%);
+  z-index: -1;
 }/*# sourceMappingURL=game.css.map */

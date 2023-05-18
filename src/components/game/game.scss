@@ -1,3 +1,116 @@
+@import '../../styles/variables';
+
 .game {
-    h1 {color: red;}
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &-options {
+        display:flex;
+        flex-direction: column;
+        background-image: url('../../assets/images/bg-triangle.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 320px;
+        width: 350px;
+        margin-top: 50px;
+        justify-content: space-between;
+        
+
+        &-svg{
+            width: 50px;
+            height: 60px;
+        }
+        &-top {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-bot {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        &-paper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            height: 90px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: inset 0px 5px 10px gray;
+            cursor: pointer;
+    
+            &::after {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                right: -10px;
+                bottom: -10px;
+                border-radius: 50%;
+                background: linear-gradient(to bottom, $paper2 80%, $paper1 100%);
+                z-index: -1;
+            }
+
+        }
+
+        &-scissors {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            height: 90px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: inset 0px 5px 10px gray;
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                right: -10px;
+                bottom: -10px;
+                border-radius: 50%;
+                background: linear-gradient(to bottom, $scissors2 80%, $scissor1 100%);
+                z-index: -1;
+            }
+
+        }
+
+        &-rock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            height: 90px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: inset 0px 5px 10px gray;
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                right: -10px;
+                bottom: -10px;
+                border-radius: 50%;
+                background: linear-gradient(to bottom, $rock2 80%, $rock1 100%);
+                z-index: -1;
+            }
+
+        }
+
+
+
+    }
 }
