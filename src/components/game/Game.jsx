@@ -3,12 +3,15 @@ import './game.css';
 import paper from '../../assets/images/icon-paper.svg';
 import rock from '../../assets/images/icon-rock.svg';
 import scissors from '../../assets/images/icon-scissors.svg';
+import { useHistory } from "react-router-dom";
 
 export default function Game(props) {
   const { setChoice } = props;
+  const history = useHistory();
 
   const handleChoice = (choice) => {
     setChoice(choice);
+    history.push('/res');
   };
 
   return (
