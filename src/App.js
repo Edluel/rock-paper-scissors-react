@@ -19,7 +19,7 @@ function App() {
               <Game setChoice={setChoice} />
             </Route>
             <Route exact path="/res">
-              <Result />
+              <Result choice={choice} score={score} setScore={setScore} />
             </Route>
           </Switch>
         </div>
