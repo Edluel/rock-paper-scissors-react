@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import paper from '../../assets/images/icon-paper.svg';
+import rock from '../../assets/images/icon-rock.svg';
+import scissors from '../../assets/images/icon-scissors.svg';
+
+
 
 export default function Result(props) {
   const { choice, score, setScore } = props;
   const history = useHistory();
   const [house, setHouse] = useState('');
+  const [divP1, setDivP1] = useState('');
+  const [svgP1, setSvgP1] = useState(null);
+  const [divH, setDivH] = useState('');
+  const [svgH, setSvgH] = useState(null);
 
   useEffect(() => {
     const randomHouse = randomChoice();
@@ -14,6 +23,26 @@ export default function Result(props) {
     if (result === 'YOU WIN!') {
       setScore(score + 1);
     }
+
+    setDivP1(choice);
+    setDivH(randomHouse);
+
+    if (choice === 'rock') {
+      setSvgP1(rock);
+    }
+    else if (choice === 'paper') {
+      setSvgP1(paper);
+    }
+    else { setSvgP1(scissors); }
+    
+    if (randomHouse === 'rock') {
+      setSvgH(rock);
+    }
+    else if (randomHouse === 'paper') {
+      setSvgH(paper);
+    }
+    else { setSvgH(scissors); }
+
   }, []);
 
   function randomChoice() {
@@ -44,13 +73,28 @@ export default function Result(props) {
     history.push('/');
   }
 
-  return (
-    <div>
-      <p>You picked: {choice}</p>
-      <p>The house picked: {house}</p>
-      <p>The result is: {results[choice][house]}</p>
 
-      <button onClick={handlePlayAgain}>PLAY AGAIN</button>
+
+
+  return (
+    <div className="result">
+      <div className={divP1}>
+        <h3>YOU PICKED</h3>
+        <img src={svgP1} />
+        <p>{choice}</p>
+      </div>
+
+      <div className="result-text">
+        <h2>{results[choice][house]}</h2>
+        <button onClick={handlePlayAgain}>PLAY AGAIN</button>
+      </div>
+
+      <div className={divH}>
+        <h3>THE HOUSE PICKED</h3>
+        <img src={svgH} />
+        <p>{house}</p>
+      </div>
+
     </div>
   );
 }
