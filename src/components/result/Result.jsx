@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import paper from '../../assets/images/icon-paper.svg';
 import rock from '../../assets/images/icon-rock.svg';
 import scissors from '../../assets/images/icon-scissors.svg';
-
+import './result.css'
 
 
 export default function Result(props) {
@@ -78,10 +78,11 @@ export default function Result(props) {
 
   return (
     <div className="result">
-      <div className={divP1}>
+      <div className="result-picked">
         <h3>YOU PICKED</h3>
-        <img src={svgP1} />
-        <p>{choice}</p>
+        <div className={"result-picked-"+divP1}>
+          <img src={svgP1} />
+        </div>
       </div>
 
       <div className="result-text">
@@ -89,10 +90,11 @@ export default function Result(props) {
         <button onClick={handlePlayAgain}>PLAY AGAIN</button>
       </div>
 
-      <div className={divH}>
+      <div className="result-picked">
         <h3>THE HOUSE PICKED</h3>
-        <img src={svgH} />
-        <p>{house}</p>
+        <div className={"result-picked-"+divH}>
+          <img src={svgH} />
+        </div>
       </div>
 
     </div>

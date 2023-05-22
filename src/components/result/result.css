@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+.result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+.result-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.result-text h2 {
+  color: white;
+}
+.result-text button {
+  color: hsl(229, 25%, 31%);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.result-text button:hover {
+  color: hsl(349, 71%, 36%);
+}
+.result-picked {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.result-picked h3 {
+  color: white;
+  margin-bottom: 75px;
+}
+.result-picked img {
+  width: 50px;
+  height: 60px;
+}
+.result-picked-paper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0px 5px 10px gray;
+  cursor: pointer;
+}
+.result-picked-paper::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, hsl(230, 89%, 65%) 80%, hsl(230, 89%, 45%) 100%);
+  z-index: -1;
+}
+.result-picked-scissors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0px 5px 10px gray;
+  cursor: pointer;
+}
+.result-picked-scissors::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, hsl(40, 84%, 53%) 80%, hsl(39, 89%, 33%) 100%);
+  z-index: -1;
+}
+.result-picked-rock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0px 5px 10px gray;
+  cursor: pointer;
+}
+.result-picked-rock::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, hsl(349, 70%, 56%) 80%, hsl(349, 71%, 36%) 100%);
+  z-index: -1;
+}/*# sourceMappingURL=result.css.map */
