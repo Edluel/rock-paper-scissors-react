@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Game from './components/game/Game';
 import Result from './components/result/Result';
+import Guide from './components/guide/Guide';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -24,6 +25,7 @@ function App() {
           </Switch>
         </div>
       </div>
+      <Guide />
     </Router>
   );
 }
