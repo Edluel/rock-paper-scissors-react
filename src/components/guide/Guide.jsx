@@ -16,7 +16,7 @@ export default function Guide() {
             {show && (
                 <div className="rules-screen">
                     <div className="rules-screen-board">
-                        <div className="rules-screen-board-hearder">
+                        <div className="rules-screen-board-header">
                             <h3>RULES</h3>
                             <img src={close} onClick={handleToggle}/>
                         </div>
