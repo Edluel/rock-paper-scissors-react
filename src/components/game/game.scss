@@ -16,6 +16,12 @@
         width: 350px;
         margin-top: 50px;
         justify-content: space-between;
+
+        @media (max-width: 550px) {
+            height: 280px;
+            width: 310px;
+        }
+
         
 
         &-svg{
@@ -25,6 +31,9 @@
         &-top {
             display: flex;
             justify-content: space-between;
+            @media (max-width: 550px) {
+                transform: translateY(-30%);
+            }
         }
         &-bot {
             display: flex;
@@ -113,4 +122,5 @@
 
 
     }
+
 }

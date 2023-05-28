@@ -16,6 +16,12 @@
   margin-top: 50px;
   justify-content: space-between;
 }
+@media (max-width: 550px) {
+  .game-options {
+    height: 280px;
+    width: 310px;
+  }
+}
 .game-options-svg {
   width: 50px;
   height: 60px;
@@ -23,6 +29,11 @@
 .game-options-top {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 550px) {
+  .game-options-top {
+    transform: translateY(-30%);
+  }
 }
 .game-options-bot {
   display: flex;
