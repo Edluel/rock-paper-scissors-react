@@ -21,7 +21,7 @@
 
 ## <a id="live-demo">Live demo</a>
 
-Try the live version of the page [here](https:/)
+Try the live version of the page [here](https://rock-paper-scissors-react-ten.vercel.app/)
 
 
 
