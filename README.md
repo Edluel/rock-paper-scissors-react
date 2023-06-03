@@ -8,7 +8,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-
+The rock-paper-scissors game is fully functional, designed with Sass, and developed with ractjs
 
 ## <a id="features">Features</a>
 
