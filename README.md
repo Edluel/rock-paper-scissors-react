@@ -12,7 +12,13 @@ The rock-paper-scissors game is fully functional, designed with Sass, and develo
 
 ## <a id="features">Features</a>
 
-
+- Responsiveness that perfectly adjusts to both desktop and mobile screens.
+- Fully styled using Sass.
+- Screen changes loaded by react routes.
+- Score changes made by useState.
+- Button to display the rules at any time during the game.
+- Play against the computer, which makes random moves.
+- Score board that reset when the player refresh the page.
 
 ## <a id="technologies">Technologies Used</a>
 - React
