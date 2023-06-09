@@ -34,10 +34,10 @@ Try the live version of the page [here](https://rock-paper-scissors-react-ten.ve
 ## <a id="screenshots">Sceenshots</a>
 
 Here are some screenshots of the game in action:<br>
-<img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_.png" width="24%" height="24%">
-<img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_ (1).png" width="24%" height="24%">
-<img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_ (2).png" width="24%" height="24%">
-<img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_ (3).png" width="24%" height="24%">
+<img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_.png" width="49%" height="49%">
+<img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_ (1).png" width="49%" height="49%">
+<img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_ (2).png" width="49%" height="49%">
+<img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_ (3).png" width="49%" height="49%">
 <img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_ (4).png" width="24%" height="24%">
 <img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_(Samsung Galaxy S20 Ultra).png" width="24%" height="24%">
 <img src="src/assets/screenshots/rock-paper-scissors-react-ten.vercel.app_(Samsung Galaxy S20 Ultra) (1).png" width="24%" height="24%">
